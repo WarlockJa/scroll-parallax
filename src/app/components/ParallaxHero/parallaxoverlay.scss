@@ -1,0 +1,41 @@
+.overlay {
+  z-index: 3;
+  color: var(--clr-font);
+  padding: 3.5em;
+
+  .overlay__nav {
+    display: flex;
+    justify-content: space-between;
+
+    picture {
+      width: 6.5em;
+
+      .overlay__nav__imgWrapper--logo {
+        height: 100%;
+        object-fit: contain;
+        transform: translateY(-1em);
+      }
+    }
+
+    .overlay__nav__links {
+      flex: 1;
+      display: flex;
+      justify-content: space-around;
+    }
+
+    .overlay__nav__socials {
+      display: flex;
+      gap: 0.5em;
+
+      a {
+        picture {
+          svg {
+            width: 1.5em;
+            height: 1.5em;
+            fill: var(--clr-font);
+          }
+        }
+      }
+    }
+  }
+}

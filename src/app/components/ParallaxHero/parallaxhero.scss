@@ -1,0 +1,66 @@
+.parallax {
+  position: relative;
+  height: 100vh;
+  height: 100dvh;
+  display: grid;
+  grid-template-areas: "stack";
+  overflow: hidden;
+
+  &::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 8em;
+    z-index: 2;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.8), transparent);
+  }
+  &::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 60vw;
+
+    background: linear-gradient(
+      89deg,
+      rgba(0, 0, 0, 0.54) 39.28%,
+      transparent 95.39%
+    );
+  }
+
+  * {
+    grid-area: stack;
+  }
+
+  .parallax__image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .parallax__foreground-back,
+  .parallax__foreground-front {
+    width: 100%;
+    height: fit-content;
+    object-fit: fill;
+    align-self: flex-end;
+    transform-origin: center;
+    z-index: 100;
+  }
+
+  .parallax__foreground-back {
+    transform: scaleX(1.04) translateY(1%);
+    mix-blend-mode: hard-light;
+  }
+
+  .parallax__foreground-front {
+    transform: scaleX(1.04) translateY(4%);
+  }
+
+  .parallax__jax {
+    z-index: 1;
+  }
+}
