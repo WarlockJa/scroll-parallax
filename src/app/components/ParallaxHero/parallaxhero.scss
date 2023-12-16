@@ -6,6 +6,7 @@
   grid-template-areas: "stack";
   overflow: hidden;
 
+  // shadow top
   &::before {
     position: absolute;
     content: "";
@@ -16,6 +17,7 @@
     z-index: 2;
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.8), transparent);
   }
+  // shadow left
   &::after {
     position: absolute;
     content: "";

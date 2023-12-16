@@ -2,4 +2,18 @@
   position: relative;
   z-index: 1;
   background: hsl(238, 100%, 6%);
+
+  .wrapper {
+    margin-top: 8em;
+    width: min(65rem, 100% - 4rem);
+    margin-inline: auto;
+
+    .h1 {
+      line-height: 1.5;
+    }
+
+    p {
+      margin-top: 2em;
+    }
+  }
 }
