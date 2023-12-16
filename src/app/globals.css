@@ -29,3 +29,15 @@ img {
   display: block;
   max-width: 100%;
 }
+
+.styled-link {
+  text-decoration: none;
+  outline-style: none;
+  color: var(--clr-font);
+  transition: opacity 300ms ease, transform 300ms ease;
+}
+.styled-link:hover,
+.styled-link:focus {
+  opacity: 0.8;
+  transform: translateY(-2%);
+}

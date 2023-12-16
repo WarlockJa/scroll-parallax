@@ -133,20 +133,12 @@
         gap: 0.5em;
 
         a {
-          outline-style: none;
-          transition: opacity 300ms ease, transform 300ms ease;
-
           picture {
             svg {
               width: 1.5em;
               height: 1.5em;
               fill: var(--clr-font);
             }
-          }
-
-          &:focus {
-            opacity: 0.8;
-            transform: translateY(-2%);
           }
         }
       }

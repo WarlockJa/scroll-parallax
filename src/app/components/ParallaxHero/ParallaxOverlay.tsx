@@ -21,22 +21,28 @@ export default function ParallaxOverlay() {
           />
         </picture>
         <div className="overlay__nav__links">
-          <p>why join us</p>
-          <p>the founders</p>
-          <p>beta info</p>
+          <a className="styled-link" href="#">
+            <p>why join us</p>
+          </a>
+          <a className="styled-link" href="#">
+            <p>the founders</p>
+          </a>
+          <a className="styled-link" href="#">
+            <p>beta info</p>
+          </a>
         </div>
         <div className="overlay__nav__socials">
-          <a href="#" target="_blank">
+          <a className="styled-link" href="#" target="_blank">
             <picture>
               <XTwitter />
             </picture>
           </a>
-          <a className="overlay__nav__socials__a" href="#" target="_blank">
+          <a className="styled-link" href="#" target="_blank">
             <picture>
               <Instagram />
             </picture>
           </a>
-          <a className="overlay__nav__socials__a" href="#" target="_blank">
+          <a className="styled-link" href="#" target="_blank">
             <picture>
               <Youtube />
             </picture>
