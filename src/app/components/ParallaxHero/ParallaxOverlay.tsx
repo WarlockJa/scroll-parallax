@@ -44,9 +44,15 @@ export default function ParallaxOverlay() {
         </div>
       </nav>
       <div className="overlay__textWrapper">
-        <p>gear up!</p>
-        <h1>we're going monster hunting!</h1>
-        <button>sign up for beta</button>
+        <p className="overlay__textWrapper--top">gear up!</p>
+        <h1 className="overlay__textWrapper--main">
+          we're going monster hunting!
+        </h1>
+        <div className="overlay__textWrapper__buttonWrapper">
+          <button className="overlay__textWrapper--button">
+            sign up for beta
+          </button>
+        </div>
       </div>
     </div>
   );

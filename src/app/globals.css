@@ -33,18 +33,3 @@ img {
   width: min(65rem, 100% - 4rem);
   margin-inline: auto;
 }
-
-.flex-group {
-  display: flex;
-  gap: 1rem;
-}
-
-.button {
-  font: inherit;
-  font-style: italic;
-  text-transform: uppercase;
-  background: hsl(279, 75%, 59%);
-  padding: 1em 2em;
-  border: 0;
-  border-radius: 0.125em;
-}
