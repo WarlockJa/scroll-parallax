@@ -10,25 +10,26 @@ export default function Home() {
       </ParallaxWrapper>
       <div className={styles.wrapper}>
         <h1>
-          This is a recreation of the hero page at{" "}
+          This webpage, a reproduction of the hero page found at{" "}
           <a href="https://moco.supercell.com/" target="_blank">
             moco.supercell.com
-          </a>{" "}
-          It is a NextJs application using{" "}
+          </a>
+          , is a Next.js application that incorporates{" "}
           <a
             href="https://www.npmjs.com/package/react-scroll-parallax"
             target="_blank"
           >
             react-scroll-parallax
           </a>{" "}
-          for parallax effect and smooth scroll using{" "}
+          for a seamless parallax effect and{" "}
           <a href="https://lenis.studiofreight.com/" target="_blank">
             Lenis
-          </a>
-          . This web page is made by{" "}
+          </a>{" "}
+          for smooth scrolling. The recreation of the design is done by{" "}
           <a href="https://warlockja.ru" target="_blank">
             WarlockJa
           </a>
+          .
         </h1>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum nostrum
