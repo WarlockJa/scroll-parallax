@@ -7,8 +7,7 @@ import Instagram from "../svg/Instagram";
 import Youtube from "../svg/Youtube";
 
 export default function ParallaxOverlay() {
-  const { ref: refOverlay }: { ref: React.RefObject<HTMLDivElement> } =
-    useParallax({ speed: -80 });
+  const { ref: refOverlay } = useParallax<HTMLDivElement>({ speed: -80 });
 
   return (
     <div className="overlay" ref={refOverlay}>

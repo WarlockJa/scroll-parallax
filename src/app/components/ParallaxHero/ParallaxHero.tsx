@@ -16,14 +16,10 @@ import ParallaxOverlay from "./ParallaxOverlay";
 
 export default function ParallaxHero() {
   // parallax hooks
-  const { ref: refRays }: { ref: React.RefObject<HTMLImageElement> } =
-    useParallax({ speed: -55 });
-  const { ref: refJax }: { ref: React.RefObject<HTMLImageElement> } =
-    useParallax({ speed: -10 });
-  const { ref: refLuna }: { ref: React.RefObject<HTMLImageElement> } =
-    useParallax({ speed: -50 });
-  const { ref: refManny }: { ref: React.RefObject<HTMLImageElement> } =
-    useParallax({ speed: -35 });
+  const { ref: refRays } = useParallax<HTMLImageElement>({ speed: -55 });
+  const { ref: refJax } = useParallax<HTMLImageElement>({ speed: -10 });
+  const { ref: refLuna } = useParallax<HTMLImageElement>({ speed: -50 });
+  const { ref: refManny } = useParallax<HTMLImageElement>({ speed: -35 });
 
   // lenis smooth scroll
   useEffect(() => {
